@@ -81,7 +81,7 @@ for (index in sourceFileList) {
     if (sourceFileList.hasOwnProperty(index)) {
         filename = sourceFileList[index];
 
-        sourceFile = cwd + '/linter-configurations/' + filename;
+        sourceFile = 'node_modules/ua5-frontend-standards/linter-configurations/' + filename;
         destinationFile = destinationPath + '/' + filename;
 
         createLink(sourceFile, destinationFile, filename);
